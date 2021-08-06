@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>door Glass anasayfa</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="tanımlar">
+        <div id="bodyNo">bodyNo: {{bodyNo | safe}}</div>
+        <div id="assyNo">Assy No</div>
+        <div id="spek">Spek bilgisi</div>
+        <div id="tarih">Tarih ve Saat</div>
+    </div>
+    <div id="Resimler">
+        <div id="ReferansResim">Referans Resim
+            <img src="{% static 'img/ref.jpg' %}" style="width: 95%;" alt="resim vardı ama yok">
+        </div>
+        <div id="ActualResim">Actual Resim
+            <img src="{% static 'img/act.jpg' %}" style="width: 95%;" alt="bakalım">
+        </div>
+    </div>
+    <div id="sonuclar">
+        <div id="status">Sonuç
+            <a href="link.html">linke tıkla</a>
+        </div>
+    </div>
+
+</body>
+</html>

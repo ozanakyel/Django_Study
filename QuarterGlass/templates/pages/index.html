@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% load static %}
+    <div id="Resimler">
+        <div id="ReferansResim" class="text-warning" ><strong>Referans Resim</strong>
+            <img src="{% static 'img/ref.jpg' %}" style="width: 95%;" alt="resim vardı ama yok">
+        </div>
+        <div id="ActualResim" class="text-warning"><strong>Actual Resim</strong>
+            <img src="{% static 'img/act.jpg' %}" style="width: 95%;" alt="bakalım">
+        </div>
+        <div id="sonuc" class="alert alert-danger text-center alert bottom-50" role="alert">
+            Result : <strong>{{dest1.result}}</strong>
+        </div>
+    </div>
+{% endblock %}
